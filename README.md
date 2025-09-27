@@ -1,7 +1,5 @@
-# DemoNotedAppMVVM
-## SwiftUI + MVVM + Core Data
+## DemoNotedAppMVVM — SwiftUI + MVVM + Core Data
 A tiny notes app showcasing MVVM, unidirectional data flow, and local persistence.
-
 
 ### Features
 - List notes (title + timestamp)
@@ -9,12 +7,13 @@ A tiny notes app showcasing MVVM, unidirectional data flow, and local persistenc
 - Delete notes (swipe or toolbar)
 - Core Data storage (async/await), Combine-friendly, unit-tested repository
 
-### Setup step
-1) **Create the Xcode project**: iOS App → Name: `KithyaNotes` → Interface: SwiftUI → Language: Swift → Storage: **include Core Data unchecked** (we provide our own stack).
-2) **Add Core Data model**: File → New → File… → Data Model → Name: `KithyaNotes` (project adds `KithyaNotes.xcdatamodeld`).
+### Setup steps
+1) **Create the Xcode project**: iOS App → Name: `Your name` → Interface: SwiftUI → Language: Swift → Storage: **include Core Data unchecked** (we provide our own stack).
+2) **Add Core Data model**: File → New → File… → Data Model → Name: `Your name` (project adds `Your name.xcdatamodeld`).
 3) **Inside the model**, create an **Entity** named `Note` with attributes:
-- `id: UUID` (Required)
-- `title: String` (Optional = **No**)
-- `content: String` (Optional = **Yes**, default empty)
-- `createdDate: Date` (Required)
+   - `id: UUID` (Required)
+   - `title: String` (Optional = **No**)
+   - `content: String` (Optional = **Yes**, default empty)
+   - `createdDate: Date` (Required)
+
 ---
